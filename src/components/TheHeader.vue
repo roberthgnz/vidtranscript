@@ -14,7 +14,7 @@
             </h1>
         </a>
         <a class="flex max-w-fit items-center justify-center space-x-2 rounded-full border border-gray-300 bg-white px-4 py-2 text-sm text-gray-600 shadow-md transition-colors hover:bg-gray-100"
-            href="https://github.com/HolaSoyGonZzA/restaurant-recommender" target="_blank" rel="noopener noreferrer">
+            href="https://github.com/roberthgnz/vidtranscript" target="_blank" rel="noopener noreferrer">
             <svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true">
                 <path fill-rule="evenodd"
