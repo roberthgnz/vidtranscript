@@ -1,4 +1,7 @@
 <script setup>
+import { onMounted } from 'vue';
+import { inject } from '@vercel/analytics'
+
 import { useVideoStore } from "./store";
 
 import TheHeader from "./components/TheHeader.vue";
@@ -7,6 +10,8 @@ import Upload from './components/Upload.vue'
 import Preview from './components/Preview.vue'
 
 const store = useVideoStore();
+
+onMounted(inject)
 </script>
 
 <template>
