@@ -1,13 +1,15 @@
 <script setup>
-defineEmits(['click'])
-defineProps(['src'])
+defineEmits(["click"]);
+defineProps({
+  src: {
+    type: String,
+    required: true,
+  },
+});
 </script>
 
 <template>
-  <div
-    class="relative cursor-pointer"
-    @click="$emit('click', src)"
-  >
+  <div class="relative cursor-pointer" @click="$emit('click', src)">
     <video
       class="aspect-video opacity-100 hover:opacity-75 transition-all"
       :src="src"
@@ -24,11 +26,7 @@ defineProps(['src'])
       stroke-linejoin="round"
       class="absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4"
     >
-      <circle
-        cx="12"
-        cy="12"
-        r="10"
-      />
+      <circle cx="12" cy="12" r="10" />
       <polygon points="10 8 16 12 10 16 10 8" />
     </svg>
   </div>
