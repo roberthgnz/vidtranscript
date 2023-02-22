@@ -75,7 +75,8 @@ onBeforeUnmount(() => {
             <a :href="result.transcript" download class="text-center font-bold mt-4">Download transcript (includes details
                 of the audio transcription)</a>
 
-            <button @click="store.reset" class="bg-[#0d6efd] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">
+            <button type="button" @click="store.reset"
+                class="bg-[#0d6efd] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">
                 Upload another video
             </button>
         </template>

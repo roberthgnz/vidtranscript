@@ -1,6 +1,32 @@
-# Vue 3 + Vite
+# Vidtranscript
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Generate automatic transcripts and subtitles for your videos with the help of the neural network-based.
+(Only english language is supported for now)
+
+## Installation
+
+```bash
+npm install
+```
+
+## Development
+
+```bash
+npm run dev
+```
+
+## Environment Variables
+
+Create a `.env` file in the root directory and add the following variables:
+
+```bash
+# .env
+CLOUDINARY_CLOUD_NAME=
+CLOUDINARY_PRESET=
+CLOUDINARY_API_KEY=
+CLOUDINARY_SECRET=
+CLOUDINARY_URL=
+```
 
 ## Recommended IDE Setup
 
