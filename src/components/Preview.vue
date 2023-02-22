@@ -61,24 +61,41 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-    <div class="flex flex-col items-center justify-center">
-        <template v-if="processing">
-            <EllipsisLoading />
-            <p class="text-center font-bold">Generating transcription, please wait...</p>
-        </template>
-        <template v-else>
-            <div class="aspect-video">
-                <VideoPlayer :options="videoOptions" />
-            </div>
-            <a :href="result.vtt" download class="text-center font-bold mt-4">Download VTT file</a>
-            <a :href="result.srt" download class="text-center font-bold mt-4">Download SRT file</a>
-            <a :href="result.transcript" download class="text-center font-bold mt-4">Download transcript (includes details
-                of the audio transcription)</a>
+  <div class="flex flex-col items-center justify-center">
+    <template v-if="processing">
+      <EllipsisLoading />
+      <p class="text-center font-bold">
+        Generating transcription, please wait...
+      </p>
+    </template>
+    <template v-else>
+      <div class="aspect-video">
+        <VideoPlayer :options="videoOptions" />
+      </div>
+      <a
+        :href="result.vtt"
+        download
+        class="text-center font-bold mt-4"
+      >Download VTT file</a>
+      <a
+        :href="result.srt"
+        download
+        class="text-center font-bold mt-4"
+      >Download SRT file</a>
+      <a
+        :href="result.transcript"
+        download
+        class="text-center font-bold mt-4"
+      >Download transcript (includes details
+        of the audio transcription)</a>
 
-            <button type="button" @click="store.reset"
-                class="bg-[#0d6efd] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">
-                Upload another video
-            </button>
-        </template>
-    </div>
+      <button
+        type="button"
+        class="bg-[#0d6efd] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4"
+        @click="store.reset"
+      >
+        Upload another video
+      </button>
+    </template>
+  </div>
 </template>

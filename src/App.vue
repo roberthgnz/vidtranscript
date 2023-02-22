@@ -20,7 +20,8 @@ onMounted(inject)
     <main class="flex flex-1 w-full flex-col items-center justify-center text-center px-4 mt-4">
       <div class="mb-4">
         <h2
-          class="text-5xl font-extrabold text-gray-800 mb-4 text-transparent bg-clip-text bg-gradient-to-r from-[#0d6efd] to-pink-600">
+          class="text-5xl font-extrabold text-gray-800 mb-4 text-transparent bg-clip-text bg-gradient-to-r from-[#0d6efd] to-pink-600"
+        >
           AI Video Transcription
         </h2>
         <p class="text-gray-600">

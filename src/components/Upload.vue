@@ -99,22 +99,39 @@ onMounted(() => {
 </script>
 
 <template>
-    <template v-if="store.currentStatus === store.status.INIT">
-        <form enctype="multipart/form-data" ref="formRef" action="/api/upload"
-            class="border-dashed border-2 border-gray-300 aspect-video p-4 rounded flex items-center justify-center flex-col cursor-pointer">
-            <span class="pointer-events-none select-none">Click or drag and drop your video here</span>
-            <span class="pointer-events-none select-none">Max file size: 10MB</span>
-        </form>
-        <p class="mt-4">Or try one of these:</p>
-        <div class="grid grid-cols-2 gap-4 mt-4">
-            <VideoPreset src="/friday.mp4" @click="getFile" />
-            <VideoPreset src="/zoo.mp4" @click="getFile" />
-        </div>
-    </template>
-    <div v-else-if="store.currentStatus === store.status.PROCESSING" class="flex flex-col items-center justify-center">
-        <EllipsisLoading />
-        <p class="text-center font-bold">Processing video...</p>
+  <template v-if="store.currentStatus === store.status.INIT">
+    <form
+      ref="formRef"
+      enctype="multipart/form-data"
+      action="/api/upload"
+      class="border-dashed border-2 border-gray-300 aspect-video p-4 rounded flex items-center justify-center flex-col cursor-pointer"
+    >
+      <span class="pointer-events-none select-none">Click or drag and drop your video here</span>
+      <span class="pointer-events-none select-none">Max file size: 10MB</span>
+    </form>
+    <p class="mt-4">
+      Or try one of these:
+    </p>
+    <div class="grid grid-cols-2 gap-4 mt-4">
+      <VideoPreset
+        src="/friday.mp4"
+        @click="getFile"
+      />
+      <VideoPreset
+        src="/zoo.mp4"
+        @click="getFile"
+      />
     </div>
+  </template>
+  <div
+    v-else-if="store.currentStatus === store.status.PROCESSING"
+    class="flex flex-col items-center justify-center"
+  >
+    <EllipsisLoading />
+    <p class="text-center font-bold">
+      Processing video...
+    </p>
+  </div>
 </template>
 
 <style scoped>
