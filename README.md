@@ -9,15 +9,25 @@ Generate automatic transcripts and subtitles for your videos with the help of th
 npm install
 ```
 
+## Requirements
+
+Requires [Vercel CLI](https://vercel.com/download) to use Vercel Edge Functions to generate transcripts and subtitles for your videos.
+
+```bash
+vercel login
+```
+
 ## Development
 
 ```bash
-npm run dev
+vercel dev
 ```
 
 ## Environment Variables
 
 Create a `.env` file in the root directory and add the following variables:
+
+Note: You can get the values for the following variables from your [Cloudinary dashboard](https://cloudinary.com/console).
 
 ```bash
 # .env
