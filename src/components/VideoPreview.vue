@@ -27,12 +27,16 @@ const result = computed(() => {
     }
 })
 
+const normalizeUrl = url => {
+  return url.replace('http://', 'https://').replace('.mp4', '.m3u8')
+}
+
 const videoOptions = computed(() => ({
     controls: true,
     autoplay: false,
     preload: "auto",
     sources: [{
-        src: store.video.url.replace('.mp4', '.m3u8'),
+        src: normalizeUrl(store.video.url),
         type: "application/x-mpegURL",
     }],
     tracks: [{
