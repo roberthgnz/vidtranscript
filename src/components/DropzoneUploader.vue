@@ -81,8 +81,7 @@ const getFile = async url => {
     const blob = await res.blob();
     const file = new File([blob], 'video.mp4', { type: 'video/mp4' });
     // Upload file
-    // uploadFile(file);
-    console.log(file);
+    uploadFile(file);
 }
 
 onMounted(() => {
