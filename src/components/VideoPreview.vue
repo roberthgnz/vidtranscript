@@ -70,7 +70,7 @@ onBeforeUnmount(() => {
         <DownloadButton :href="result.vtt">Download VTT</DownloadButton>
         <DownloadButton :href="result.srt">Download SRT</DownloadButton>
       </div>
-      <DownloadButton :href="result.transcript"
+      <DownloadButton :href="result.transcript" class="justify-center"
         >Download transcript</DownloadButton
       >
       <small class="-mt-2">
