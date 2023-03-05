@@ -23,6 +23,9 @@ export default {
     });
     this.player.source(this.options.source, {
       sourceTypes: ["hls"],
+      textTracks: {
+        subtitles: [this.options.track],
+      },
       transformation: {
         streaming_profile: "hd",
       },
@@ -35,9 +38,9 @@ export default {
   <div class="max-w-[800px]">
     <video id="doc-player" controls muted class="cld-video-player cld-fluid">
       <track
-        :kind="options.track.kind"
+        kind="subtitles"
         :src="options.track.url"
-        :srclang="options.track.srclang"
+        :srclang="options.track.language"
         :label="options.track.label"
         default
       />
