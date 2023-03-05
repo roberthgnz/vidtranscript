@@ -11,7 +11,7 @@ defineProps({
   <a
     :href="href"
     download
-    class="border border-gray-300 bg-white text-gray-600 hover:bg-gray-100 focus:ring-4 focus:outline-none font-medium rounded text-sm px-4 py-2 text-center inline-flex items-center mr-2 my-2"
+    class="border border-gray-300 bg-white text-gray-600 hover:bg-gray-100 focus:ring-4 focus:outline-none font-medium rounded text-sm px-4 py-2 text-center inline-flex items-center justify-center mr-2 my-2"
   >
     <svg
       xmlns="http://www.w3.org/2000/svg"
