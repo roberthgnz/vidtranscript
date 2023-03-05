@@ -111,9 +111,13 @@ onMounted(() => {
     <p class="mt-4">
       Or try one of these:
     </p>
-    <div class="grid grid-cols-2 gap-4 mt-4">
+    <div class="grid grid-cols-3 gap-4 mt-4">
       <VideoPreset
         src="/friday.mp4"
+        @click="getFile"
+      />
+      <VideoPreset
+        src="/cloudinary.mp4"
         @click="getFile"
       />
       <VideoPreset
