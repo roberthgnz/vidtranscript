@@ -15,7 +15,6 @@ specifiers:
   postcss: ^8.4.21
   streamifier: ^0.1.1
   tailwindcss: ^3.2.7
-  video.js: ^8.0.4
   vite: ^4.1.0
   vue: ^3.2.45
   vue-buzz-notify: ^0.0.2
@@ -29,7 +28,6 @@ dependencies:
   multer: 1.4.5-lts.1
   pinia: 2.0.32_vue@3.2.47
   streamifier: 0.1.1
-  video.js: 8.0.4
   vue: 3.2.47
   vue-buzz-notify: 0.0.2
 
@@ -793,7 +791,7 @@ packages:
       video.js: 7.21.3
       videojs-contrib-ads: 6.9.0
       videojs-contrib-dash: 5.1.1
-      videojs-contrib-quality-levels: 2.2.1_video.js@7.21.3
+      videojs-contrib-quality-levels: 2.2.1
       videojs-ima: 1.11.0_video.js@7.21.3
       videojs-per-source-behaviors: 2.1.0
       webfontloader: 1.6.28
@@ -2502,13 +2500,11 @@ packages:
       video.js: 7.21.3
     dev: false
 
-  /videojs-contrib-quality-levels/2.2.1_video.js@7.21.3:
+  /videojs-contrib-quality-levels/2.2.1:
     resolution: {integrity: sha512-cnF6OGGgoC/2nUrbdz54nzPm3BpEZQzMTpyekiX6AXs8imATX2sHbrUz97xXVSHITldk/+d7ZAUrdQYJJTyuug==}
-    peerDependencies:
-      video.js: ^6 || ^7 || ^8
     dependencies:
       global: 4.4.0
-      video.js: 7.21.3
+      video.js: 8.0.4
     dev: false
 
   /videojs-contrib-quality-levels/3.0.0_video.js@8.0.4:
