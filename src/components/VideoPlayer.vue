@@ -19,7 +19,7 @@ export default {
   },
   mounted() {
     this.player = videoPlayer("doc-player", {
-      cloud_name: "roberthgnz",
+      cloud_name: "dbcud3ejg",
     });
     this.player.source(this.options.source, {
       sourceTypes: ["hls"],

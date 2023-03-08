@@ -21,7 +21,7 @@ const result = computed(() => {
       vtt: "",
       srt: "",
     };
-  const baseUrl = `https://res.cloudinary.com/roberthgnz/raw/upload/v${store.video.version}/${store.video.public_id}`;
+  const baseUrl = `https://res.cloudinary.com/dbcud3ejg/raw/upload/v${store.video.version}/${store.video.public_id}`;
   return {
     transcript: `${baseUrl}.transcript`,
     vtt: `${baseUrl}.vtt`,
